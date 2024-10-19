@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 2px solid #fff;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+/* Responsividade aprimorada */
+@media (min-width: 801px) {
+    canvas {
+        width: 900px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
